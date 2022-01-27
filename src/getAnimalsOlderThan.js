@@ -14,12 +14,11 @@ const data = require('../data/zoo_data');
 
 function getAnimalsOlderThan(animal, age) {
   // seu código aqui
-  // if (species.find((element) => element.name === animal) && species.filter((element) => element.residents.age >= age)) {
-  //   return true;
-  // }
-  const socorroJesus = species.find((element) => element.name === animal);
-  // const socorroDeus = species.filter((element) => element.residents.age >= age);
-  // return socorroDeus;
-  return socorroJesus;
+  const getAnimal = species.find((element) => element.name === animal);
+  const getAge = getAnimal.residents.filter((element) => element.age >= age);
+
+  return getAge.length === getAnimal.residents.length; // saiu gracas a ajuda dos colegas Heitor Tessaro && Vitor Belarmino
 }
+getAnimalsOlderThan('otters', 9);
+// console.log(getAnimalsOlderThan('otters', 7));
 module.exports = getAnimalsOlderThan;
