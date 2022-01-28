@@ -15,8 +15,8 @@ function getEmployeeByName(employeeName) {
   if (employeeName === undefined) {
     return {};
   }
-  // const getName = employees.find((element) => element.firstName === employeeName || element.lastName === employeeName);
-  return employees.find((element) => element.firstName === employeeName || element.lastName === employeeName);
+  const getName = employees.find((element) =>
+    element.firstName === employeeName || element.lastName === employeeName);
+  return getName;
 }
-getEmployeeByName();
 module.exports = getEmployeeByName;

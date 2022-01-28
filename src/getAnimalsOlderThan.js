@@ -19,6 +19,5 @@ function getAnimalsOlderThan(animal, age) {
 
   return getAge.length === getAnimal.residents.length; // saiu gracas a ajuda dos colegas Heitor Tessaro && Vitor Belarmino
 }
-getAnimalsOlderThan('otters', 9);
-// console.log(getAnimalsOlderThan('otters', 7));
+
 module.exports = getAnimalsOlderThan;
